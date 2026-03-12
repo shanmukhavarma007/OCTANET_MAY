@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>ABC Travels - Explore the World with Us!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="style1.css">
 </head>
 <body>
@@ -21,6 +22,9 @@
     const nav = document.getElementById('navigation');
     const toggleBtn = document.getElementById('toggleNav');
 
+    toggleBtn.addEventListener('click', function() {
+      nav.classList.toggle('active');
+    });
     toggleBtn.addEventListener('touchstart', function() {
       nav.classList.toggle('active');
     });
